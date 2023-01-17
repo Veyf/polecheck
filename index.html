@@ -37,6 +37,12 @@
         if (currMonth < 10) currMonth = "0" + currMonth;
         if (currDay < 10) currDay = "0" + currDay;
 
+        //DPole
+        if (document.getElementById("poleSpecies").value == "d") {
+          document.getElementById("poleResult").value = "Don't climb dumb fuck";
+          return;
+        }
+
         //S1
         if (document.getElementById("poleType").value == "2i") {
           if (document.getElementById("poleYear").value == 1998) {
@@ -109,11 +115,6 @@
               (currentYear - 6);
             return;
           }
-        }
-
-        if (document.getElementById("poleSpecies").value == "d") {
-          document.getElementById("poleResult").value = "Don't climb dumb fuck";
-          return;
         }
         document.getElementById("poleResult").value = "Not matched any checks";
         return;
