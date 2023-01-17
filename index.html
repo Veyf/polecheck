@@ -60,7 +60,7 @@
           document.getElementById("poleSpecies").value == "z"
         ) {
           document.getElementById("poleResult").value =
-            "(S2) Climb if tested within 6 years <br> " +
+            "(S2) Climb if tested within 6 years \n Oldest test" +
             currDay +
             "/" +
             currMonth +
@@ -73,7 +73,7 @@
         if (document.getElementById("poleYear").value >= 1880) {
           if (currentYear - document.getElementById("poleYear").value >= 54) {
             document.getElementById("poleResult").value =
-              "(S3) Climb if tested within 6 years <br> " +
+              "(S3) Climb if tested within 6 years \n Oldest test " +
               currDay +
               "/" +
               currMonth +
@@ -87,7 +87,7 @@
         if (document.getElementById("poleYear").value >= 1880) {
           if (currentYear - document.getElementById("poleYear").value >= 18) {
             document.getElementById("poleResult").value =
-              "(S4) Climb if tested within 6 years <br> " +
+              "(S4) Climb if tested within 6 years \n Oldest test " +
               currDay +
               "/" +
               currMonth +
@@ -101,7 +101,7 @@
         if (document.getElementById("poleYear").value >= 1880) {
           if (currentYear - document.getElementById("poleYear").value <= 17) {
             document.getElementById("poleResult").value =
-              "(S5) Climb if tested within 6 years <br> " +
+              "(S5) Climb if tested within 6 years \n Oldest test " +
               currDay +
               "/" +
               currMonth +
@@ -162,7 +162,7 @@
 
         <div class="row">
           <label for="poleResult">Result:</label>
-          <input type="text" disabled id="poleResult" />
+          <textarea disabled id="poleResult"></textarea>
         </div>
       </form>
     </div>
