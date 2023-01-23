@@ -107,12 +107,7 @@
         if (document.getElementById("poleYear").value >= 1880) {
           if (currentYear - document.getElementById("poleYear").value <= 17) {
             document.getElementById("poleResult").value =
-              "(S5) Climb if tested within 6 years \n Oldest test " +
-              currDay +
-              "/" +
-              currMonth +
-              "/" +
-              (currentYear - 6);
+              "(S5) Poles under 18 years old do not require test label. Climb after checks.";
             return;
           }
         }
